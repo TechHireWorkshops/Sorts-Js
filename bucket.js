@@ -1,7 +1,7 @@
 function bucketSort(array, bucketSize = 5) {
   let min = Math.min(...array);
   let max = Math.max(...array);
-  let allBuckets = [];
+  let bucketContainer = [];
   let sortedArray = [];
 
   if (array.length < 2) {
@@ -11,14 +11,14 @@ function bucketSort(array, bucketSize = 5) {
   let bucketCount = Math.floor((max - min) / bucketSize) + 1;
 
   for (let i = 0; i < bucketCount; i++) {
-    allBuckets[i] = [];
+    bucketContainer[i] = [];
   }
 
   array.forEach(currentVal => {
-    allBuckets[Math.floor((currentVal - min) / bucketSize)].push(currentVal);
+    bucketContainer[Math.floor((currentVal - min) / bucketSize)].push(currentVal);
   });
 
-  allBuckets.forEach(bucket => {
+  bucketContainer.forEach(bucket => {
     insertionSort(bucket);
     bucket.forEach(element => sortedArray.push(element));
   });
@@ -39,5 +39,3 @@ function insertionSort(array) {
 
   return array;
 }
-
-
