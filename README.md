@@ -42,6 +42,7 @@ Some sorting algorithms are naturally stable, and most that are not can be modif
 ### Evaluation of common sorts
 
 ![](./images/sortbigos.png)
+[](https://medium.com/@info.gildacademy/time-and-space-complexity-of-data-structure-and-sorting-algorithms-588a57edf495#:~:text=In%20layman's%20terms%2C%20We%20can,of%20input%20to%20the%20algorithm.)
 
 ## Sort Visualization
 [Visualgo](https://www.visualgo.net)
