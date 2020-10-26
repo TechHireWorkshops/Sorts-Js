@@ -59,8 +59,8 @@ The worst sort in the world (with the exception of [Bogosort](http://www.algostr
 #### Steps
 
 1. Iterate through the array from the beginning of the array.
-2. As you go, check each element against the next element.  If the next element is less than the current, switch their positions.
-3. Repeat the process from the second element in the array, then the third, etc until you reach the end of the array.
+2. As you go, check each element against the next element.  If the next element is less than the current, switch their positions. Continue until you reach the end of the array.
+3. Repeat the process again from the beginning until the second from the end of the array, then the thirs from last, etc.
 
 ### Selection Sort
 
